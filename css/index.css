@@ -70,7 +70,6 @@ body{
 	margin: 0 auto;
 }
 nav {
-	/*boreder: 1px solid red;**/
 	margin-top: 20px;
 	display:inline-block;
 	width: 100%;
@@ -90,7 +89,6 @@ nav a{
 }
 
 header{
-/*boreder: 1px solid red;**/
 display: flex; 
 justify-content: space-around;
 margin: 40px;
@@ -98,7 +96,6 @@ align-items: center;
 }
 
 header .left-container{
-	/*border: 1px solid black;*/
 font-size: 80px;
 display: inline-block;
 }
@@ -124,22 +121,22 @@ header .h1{
 	text-decoration:none;
 	color: black;
 	border: .5px solid black;
-	margin: 0px 10px 10px 0px auto; /*to center the button*/
+	margin: 0px 10px 10px 0px auto; 
 	padding: 10px;
 }
 
 hr{
-	border: .5px solid  black; /* border top increases the thickness of the line, don't comment out the border here*/
+	border: .5px solid  black; 
 }
 
 .top-paragraphs{
 	display: flex;
 	margin: 20px;
-	 /*manipulate this to fix top paragraphs*/
+
 }
 .middle-img {
 	width: 100%;
-	margin: 20px 0; /* to put space around the image*/
+	margin: 20px 0;
 }
 .bottom-paragraphs{
   display: flex;
