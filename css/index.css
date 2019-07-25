@@ -66,23 +66,22 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 body{
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 }
-nav {
+nav{
 	margin-top: 20px;
-	display:inline-block;
 	width: 100%;
 	height: 60px;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	
+	justify-content: space-around;	
 }
 
-nav .logo {
-	display: inline-block;
-}
+/* nav .logo {
+	display: flex;
+} */
+
 nav a{
 	text-decoration: none;
 	color:gray;
@@ -111,22 +110,20 @@ header .h1{
 }
 
 .button{
-	/*border: 1px solid black;*/
-	widows: 50%;
-	font-size:20px;
-	padding: 5px 10px;
+    font-size: 20px; 
 }
 
 .button a{
 	text-decoration:none;
 	color: black;
 	border: .5px solid black;
-	margin: 0px 10px 10px 0px auto; 
-	padding: 10px;
+    margin: 0px 10px 10px 0px auto; 
+    padding: 12px 28px;
 }
 
 hr{
-	border: .5px solid  black; 
+    border: 1px solid  black; 
+    width: 98%;
 }
 
 .top-paragraphs{
@@ -135,8 +132,10 @@ hr{
 
 }
 .middle-img {
-	width: 100%;
-	margin: 20px 0;
+	width: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .bottom-paragraphs{
   display: flex;
@@ -152,3 +151,47 @@ footer .copyright{
 	text-align: center;
 }
 
+/*Tablet View*/
+
+@media(max-width: 800px){
+.header-img{
+    display: none;
+}
+
+nav .logo{
+    order: -1;  
+    display:flex;
+   flex-direction: column;
+    }
+}
+
+/*Mobile View*/
+
+@media(max-width: 500px){
+nav {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	align-items: center;
+}
+
+nav a{
+	width: 100%;
+	border-top: 1px solid black; 
+	border-bottom: 1px solid black;
+}
+nav .logo{
+   order: -1;
+}
+.top-paragraphs{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0 20px 0;
+}
+
+.bottom-paragraphs{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0 20px 0;
+	}
+}
